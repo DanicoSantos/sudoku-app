@@ -10,7 +10,40 @@
     padding: 10px;
 }
 .board {
+    display: table;
     padding: 50px 0;
     margin: 0 auto;
-    width: 50%;
+    width: 500px;
+}
+.board > .square {
+    display: table;
+    float: left;
+    box-sizing: border-box;
+    padding: 0;
+    width: 144px;
+    height: 144px;
+    text-align: center;
+    border: 2px solid #000;
+}
+.square > .miniSqr {
+    float: left;
+    box-sizing: border-box;
+    width: 46.5px;
+    height: 46.5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+
+.miniSqr > input[type=text] {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    font-size: 16pt;
+}
+.miniSqr > input[type=text]:hover {
+    background-color: rgba(150, 136, 231, 0.575);
+}
+.miniSqr> input[type=text]:focus {
+    background-color: rgba(77, 63, 160, 0.575);
 }
